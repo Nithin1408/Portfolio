@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: rgb(3, 19, 44);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(29, 45, 74);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(91, 90, 173);
+    font-size: 1.05rem;
+}
+
+div div a:hover {
+    font-size: 1.15rem;
+    color: rgb(91, 90, 173);
+    background-color: aliceblue;
+}
+
+hr {
+    height: 3px;
+    margin: 0px 40px;
+    border: 0.2px rgb(46, 71, 118);
+    background-color: rgb(29, 45, 74);
+}
+
+div>div>a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 45, 74);
+    font-size: 1.1rem;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.cv {
+    margin-top: 20px;
+    /* Adjust as needed */
+}
+
+.aboutme,
+.skills,
+.projects
+.contact-me,
+.left {
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7rem;
+}
+.left{
+    font-weight: 500;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px 0px;
+
+}
+
+.firstSection>div {
+    width: 35%;
+}
+
+.rightSection img {
+    margin-top: 30px;
+    width: 85%;
+
+}
+
+.leftSection {
+    font-size: 1.8rem;
+    margin: 80px 0px 0px 70px;
+}
+
+.purple {
+    color: rgb(91, 90, 173);
+}
+
+.aboutme,
+.skills,
+.contact-me {
+    margin: 0px 80px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.about,
+.skill,
+.contact {
+    padding-top: 78px;
+}
+
+.about h2 {
+    margin-bottom: 2rem;
+}
+
+.timeline {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(46, 71, 118);
+    z-index: -1;
+}
+
+.timeline-item {
+    position: relative;
+    text-align: center;
+    width: 250px;
+}
+
+.timeline-dot {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    top: -10px;
+    z-index: 1;
+}
+
+.timeline-time {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.timeline-content {
+    margin-top: 15px;
+    background-color: rgb(46, 71, 118);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid rgb(98, 126, 163);
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.timeline-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(98, 117, 195, 0.8);
+}
+
+.timeline-content h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 7px;
+    font-weight: 550;
+}
+
+.timeline-content p {
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 22px;
+}
+
+.hr {
+    margin-top: 70px;
+}
+
+table {
+    color: rgb(255, 255, 255);
+    margin: auto;
+    border-spacing: 40px;
+}
+
+td {
+    background-color: rgb(98, 126, 163);
+    border: 2px solid rgb(46, 71, 118);
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    padding: 0px;
+
+}
+
+.t {
+    background-color: rgb(98, 126, 163);
+    padding: 0;
+    margin-bottom: 5px;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.skill-image {
+    background-color: rgb(98, 126, 163);
+    height: 130px;
+    width: 130px;
+    align-content: space-around;
+}
+#projects h2 {
+    color: white;
+    font-family: "Love Ya Like A Sister", cursive;
+}
+
+
+.projects {
+    padding: 60px 0;
+    text-align: center;
+    background-color: rgb(3, 19, 44);
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    color: rgb(29, 45, 74);
+    margin-bottom: 20px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project {
+    width: 300px;
+    background-color: rgb(98, 126, 163);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.project p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.project a {
+    text-decoration: none;
+    color: rgb(91, 90, 173);
+    font-weight: 600;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.project a:hover {
+    color: rgb(46, 71, 118);
+}
+
+td:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(246, 246, 246, 0.292);
+}
+
+.contact-box {
+    width: 160%; /* Increased width */
+    display: flex;
+    flex-direction: row;
+    height: 700px; /* Increased height */
+    margin: auto;
+    margin-bottom: 120px; /* Adjusted margin */
+    margin-top: 60px; /* Adjusted margin */
+    border: 25px solid rgb(3, 19, 44); /* Increased border width */
+    border-radius: 20px; /* Optional: for rounded corners */
+}
+
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.832);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    color: rgb(29, 45, 74);
+    padding: 30px;
+    font-size: x-large;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.566);
+}
+.contact-image {
+    height: 500px;
+    width: 420px;
+    object-fit: contain;
+  }
+  
+
+.contact-right {
+    width: 50%;
+    background-color: rgb(29, 45, 74);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: white;
+    padding: 20px;
+    font-size: 1.7rem;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.566);
+
+}
+
+div p {
+    margin:0;
+    color: rgb(29, 45, 74);
+    font-weight: 250;
+}
+
+#name,
+#email,
+#phone,
+#message {
+    margin: 15px 30px;
+    height: 40px;
+    width:80%;
+    background-color: rgb(29, 45, 74);
+    border-radius: 17px;
+    color: white;
+    padding-left: 20px;
+    border: 1px solid white;
+}
+
+#message {
+    padding-top: 10px;
+    height: 150px;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.918);
+
+}
+button{
+    margin:0  40% 10px 40%;
+    margin-top: 0;
+    width: 100px;
+    height: 60px;
+    border-radius: 20px;
+    color: rgb(3, 19, 44) ;
+    font-weight: 700;
+    font-size: medium;
+    background: linear-gradient(180deg, white, rgb(80, 103, 133));
+
+}
+button:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    box-shadow: 0 0 10px  rgb(122, 132, 152);
+}
+.social{
+   margin: 15px 0px 0px 20px;
+}
+.social a{
+   visibility: hidden;
+
+}
+.social img {
+    width: 40px;
+    height:40px;
+    margin: 0;
+    padding: 0;
+    visibility: visible;
+}
+.social img:hover{
+    transform: scale(1.07);
+}
+.social p{
+   font-size: medium;
+}
+.number, .email{
+    display: flex;
+    flex-direction: row;
+    font-size: x-small;
+    margin:0px 5px;
+}
+.number p, .email p{
+    margin-left: 10px;
+}
+
+#element {
+    color: rgb(91, 90, 173);
+
+}
+
+
+
+/* Mobile devices (max width: 767px) */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;  /* Reduce font size for small screens */
+    }
+
+    nav {
+        flex-direction: column;  /* Stack navigation items */
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;  /* Adjust spacing between menu items */
+    }
+
+    .firstSection {
+        flex-direction: column;  /* Stack content for smaller screens */
+        align-items: center;
+        padding: 0 10px;  /* Add padding for better spacing */
+    }
+
+    .firstSection>div {
+        width: 100%;  /* Adjust width to take full screen */
+        margin-bottom: 20px;  /* Adjust spacing */
+    }
+
+    .rightSection img {
+        width: 100%;  /* Make the image fit the screen */
+        height: auto;
+    }
+
+    .contact-box {
+        flex-direction: column;  /* Stack contact form and image */
+        height: auto;
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+        border-radius: 0;  /* Remove rounded corners on mobile */
+        padding: 15px;  /* Add padding to contact sections */
+    }
+
+    .aboutme, .skills, .contact-me {
+        font-size: 1.5rem;  /* Reduce font size */
+        margin: 20px 10px;  /* Adjust margins */
+    }
+
+    .projects h2 {
+        font-size: 2rem;  /* Adjust project title font size */
+    }
+
+    .project-container {
+        flex-direction: column;  /* Stack project items vertically */
+        gap: 20px;
+    }
+
+    .project {
+        width: 100%;  /* Full width for project cards */
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .project img {
+        height: auto;
+        width: 100%;
+    }
+
+    button {
+        width: 80%;  /* Make the button take up more width */
+        margin: 0 10% 10px 10%;  /* Adjust button margins */
+    }
+}
